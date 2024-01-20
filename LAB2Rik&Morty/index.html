@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Rick and Morty Characters</title>
+</head>
+<body>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search characters...">
+      <span id="clearSearch" class="clear-search">&#10006;</span>
+    </div>
+    <select id="genderFilter">
+      <option value="all">All</option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="genderless">Genderless</option>
+      <option value="unknown">Unknown</option>
+    </select>
+    <div id="characterList" class="character-list"></div>
+    <button id="loadMoreBtn">Load more</button>
+</div>
+<footer class="text-center">
+  <p>&copy; 2024 Aleksey Savelev | <a href="https://github.com/GeTRenTeD" target="_blank">GitHub</a></p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
