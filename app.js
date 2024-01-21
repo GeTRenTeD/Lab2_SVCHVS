@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     let page = 1;
     let currentSearch = '';
-    let currentGenderFilter = 'all';
+    let currentGenderFilter = '';
   
     function fetchCharacters() {
       const apiUrl = `https://rickandmortyapi.com/api/character/?page=${page}&name=${currentSearch}&gender=${currentGenderFilter}`;
@@ -73,7 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     genderFilter.addEventListener('change', handleGenderFilter);
-  
+    
+    loadMoreBtn.addEventListener('click', loadMoreCharacters);
+
     loadMoreBtn.addEventListener('mouseover', function () {
         this.style.backgroundColor = '#0056b3';
       });
