@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.style.backgroundColor = '#0056b3';
       });
     
-      loadMoreBtn.addEventListener('mouseout', function () {
+    loadMoreBtn.addEventListener('mouseout', function () {
         this.style.backgroundColor = '#007bff';
       });
       
